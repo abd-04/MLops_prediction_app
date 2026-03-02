@@ -1,10 +1,10 @@
-# 🩺 MLops_prediction_app
+#  MLops_prediction_app
 
 This is a end to end deployed machine learning system with basic MLOps principles.
 
 ---
 
-# 📌 Project Overview
+#  Project Overview
 
 An end-to-end deployed ML inference system with basic MLOps principles.  
 
@@ -14,7 +14,7 @@ To include containerization too, I containerized the whole backend service into 
 
 ---
 
-# 🏗 Architecture
+#  Architecture
 
 Project follows a client-server architecture.
 
@@ -32,7 +32,7 @@ JSON Response
 
 ---
 
-# 🔄 System Flow
+#  System Flow
 
 1. User interacts with Streamlit web interface.  
 2. Streamlit collects the data and sends it to the FastAPI backend by HTTP POST request.  
@@ -42,7 +42,7 @@ JSON Response
 
 ---
 
-# 🤖 Model Details
+#  Model Details
 
 Logistic Regression model was used.
 
@@ -54,7 +54,7 @@ Logistic regression uses the **sigmoid function** to squash the output between 0
 
 ---
 
-## 📊 Train-Test Split
+##  Train-Test Split
 
 Data was split into **80/20**:
 
@@ -63,7 +63,7 @@ Data was split into **80/20**:
 
 ---
 
-## ⚙️ Preprocessing – StandardScaler
+##  Preprocessing-StandardScaler
 
 ```python
 scaler = StandardScaler()
@@ -82,7 +82,7 @@ X_test_scaled = scaler.transform(X_test)
 
 ---
 
-## ⚖️ Handling Class Imbalance
+##  Handling Class Imbalance
 
 Dataset distribution:
 
@@ -103,7 +103,7 @@ This improved recall and other classification metrics.
 
 ---
 
-## 📈 Threshold Optimization
+##  Threshold Optimization
 
 Default threshold = 0.5
 
@@ -131,7 +131,7 @@ F1: 0.6991
 
 ---
 
-## 📌 Metric Interpretation
+##  Metric Interpretation
 
 **Recall (Sensitivity) = 80%**
 
@@ -150,7 +150,7 @@ Accuracy looks decent but can be misleading in imbalanced datasets.
 
 ---
 
-# 📂 Project Structure
+#  Project Structure
 
 ```
 MLops_prediction_app/
@@ -190,7 +190,7 @@ The blueprint of the backend is called a **Docker image**, and when that image r
 
 ---
 
-# ⚡ How the Backend Works
+#  How the Backend Works
 
 The backend exposes an HTTP endpoint:
 
@@ -211,7 +211,7 @@ The FastAPI application runs on top of **Uvicorn**, which is responsible for han
 
 ---
 
-# 🌐 Deployment on Render
+#  Deployment on Render
 
 The backend is deployed on Render using Docker.
 
@@ -225,7 +225,7 @@ Deployment flow:
 
 ---
 
-# 🚀 Running the Project Locally
+#  Running the Project Locally
 
 This project consists of two independent services:
 
@@ -274,7 +274,7 @@ http://localhost:10000/predict
 
 ---
 
-# 🎯 Future Milestones
+#  Future Milestones
 
 - Add monitoring  
 - Add CI/CD complete pipeline  
