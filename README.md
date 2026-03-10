@@ -1,4 +1,4 @@
-#  MLops_prediction_app
+# Diabetes Prediction System
 
 This is a end to end deployed machine learning system with basic MLOps principles.
 
